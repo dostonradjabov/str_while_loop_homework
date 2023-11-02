@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i=0
+    letters=0
+    while i<len(s):
+        if s[i].isalpha():
+            letters+=1
+        i+=1
+    return "Letters",letters
+print(main("python 2022"))
+print(main("e324xE"))
